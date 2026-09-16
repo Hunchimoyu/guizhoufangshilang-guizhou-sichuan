@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>贵州方世郎 · 苗药皮肤专科招商</title>
+<meta name="description" content="贵州方世郎生物科技有限公司，非遗苗药原研企业，专注苗药皮肤专科领域，诚邀合作伙伴共建全国苗药皮肤专科连锁。">
+<meta property="og:title" content="贵州方世郎 · 苗药皮肤专科招商">
+<meta property="og:description" content="非遗苗药原研企业，研发生产销售一体化，诚邀合作伙伴共建全国苗药皮肤专科连锁。">
+<meta property="og:image" content="images/hero-bg.jpg">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+/* ===== 全局重置与变量 ===== */
+:root {
+  --miao-deep: #1e3a5f;
+  --miao-dark: #0e2540;
+  --miao-gold: #c9a96e;
+  --miao-gold-light: #e0c98f;
+  --miao-red: #2b6cb0;
+  --miao-cream: #f5f0e6;
+  --miao-paper: #faf7f0;
+  --miao-text: #2c2c2c;
+  --miao-text-light: #6b6b6b;
+  --miao-border: rgba(201, 169, 110, 0.3);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: var(--miao-paper);
+  color: var(--miao-text);
+  line-height: 1.7;
+  overflow-x: hidden;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ===== 苗族纹样装饰 ===== */
+.miao-pattern {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.08;
+}
+
+.pattern-corner-tl { top: 0; left: 0; width: 80px; height: 80px; border-top: 2px solid var(--miao-gold); border-left: 2px solid var(--miao-gold); }
+.pattern-corner-br { bottom: 0; right: 0; width: 80px; height: 80px; border-bottom: 2px solid var(--miao-gold); border-right: 2px solid var(--miao-gold); }
+
+/* ===== 通用区块 ===== */
+.section {
+  position: relative;
+  padding: 60px 24px;
+  overflow: hidden;
+}
+
+.section-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--miao-deep);
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  font-size: 12px;
+  color: var(--miao-gold);
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.title-divider {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--miao-gold), transparent);
+  margin: 0 auto 32px;
+}
+
+/* ===== 滚动动画 ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ===== 首屏封面 ===== */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--miao-dark);
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+  filter: saturate(0.8);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(14, 37, 64,0.6) 0%, rgba(14, 37, 64,0.85) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 24px;
+}
+
+.hero-brand-en {
+  font-size: 11px;
+  letter-spacing: 6px;
+  color: var(--miao-gold);
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: fadeInDown 1s ease 0.3s forwards;
+}
+
+.hero-brand {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 44px;
+  font-weight: 900;
+  color: var(--miao-cream);
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  opacity: 0;
+  animation: fadeInUp 1s ease 0.5s forwards;
+}
+
+.hero-slogan {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px;
+  color: var(--miao-gold-light);
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: fadeInUp 1s ease 0.7s forwards;
+}
+
+.hero-sub {
+  font-size: 13px;
+  color: rgba(245,240,230,0.7);
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeInUp 1s ease 0.9s forwards;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 12px 36px;
+  border: 1px solid var(--miao-gold);
+  color: var(--miao-gold-light);
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  background: rgba(201,169,110,0.1);
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 1s ease 1.1s forwards;
+}
+
+.hero-cta:active {
+  background: rgba(201,169,110,0.25);
+  transform: scale(0.97);
+}
+
+/* 下滑引导箭头 */
+.scroll-hint {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1s ease 1.5s forwards;
+}
+
+.scroll-hint-text {
+  font-size: 10px;
+  color: rgba(201,169,110,0.7);
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.scroll-arrow {
+  width: 24px;
+  height: 24px;
+  border-right: 1.5px solid var(--miao-gold);
+  border-bottom: 1.5px solid var(--miao-gold);
+  transform: rotate(45deg);
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: rotate(45deg) translate(0, 0); opacity: 0.6; }
+  50% { transform: rotate(45deg) translate(4px, 4px); opacity: 1; }
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ===== 品牌故事 ===== */
+.brand-story {
+  background: var(--miao-paper);
+}
+
+.story-intro {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.story-quote {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 20px;
+  color: var(--miao-deep);
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.story-quote-en {
+  font-size: 11px;
+  color: var(--miao-gold);
+  letter-spacing: 3px;
+}
+
+.story-text {
+  font-size: 14px;
+  color: var(--miao-text-light);
+  line-height: 2;
+  text-align: justify;
+  margin-bottom: 24px;
+  text-indent: 2em;
+}
+
+.story-image-wrap {
+  position: relative;
+  margin: 28px 0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(30, 58, 95,0.15);
+}
+
+.story-image-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.story-ancient-quote {
+  position: relative;
+  margin: 24px 0;
+  padding: 20px 20px 20px 24px;
+  background: linear-gradient(135deg, rgba(30, 58, 95,0.04), rgba(201,169,110,0.06));
+  border-left: 3px solid var(--miao-gold);
+  border-radius: 0 8px 8px 0;
+}
+
+.story-ancient-quote::before {
+  content: '';
+  position: absolute;
+  top: 12px; left: 8px;
+  width: 16px; height: 16px;
+  background: var(--miao-gold);
+  opacity: 0.15;
+  border-radius: 50%;
+}
+
+.story-ancient-text {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  color: var(--miao-deep);
+  line-height: 2.1;
+  font-style: italic;
+  text-align: justify;
+}
+
+.story-ancient-source {
+  font-size: 11px;
+  color: var(--miao-gold);
+  margin-top: 10px;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.story-subheading {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--miao-deep);
+  margin: 24px 0 10px;
+  padding-left: 12px;
+  border-left: 3px solid var(--miao-gold);
+  letter-spacing: 1px;
+}
+
+.story-feature-tags {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.story-feature-tag {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: 12px 8px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(30, 58, 95,0.06);
+  border: 1px solid rgba(201,169,110,0.2);
+}
+
+.story-feature-tag-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--miao-deep);
+  margin-bottom: 4px;
+}
+
+.story-feature-tag-desc {
+  font-size: 10px;
+  color: var(--miao-text-light);
+  line-height: 1.5;
+}
+
+.story-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 28px 0;
+  gap: 12px;
+}
+
+.story-divider-line {
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--miao-gold));
+}
+
+.story-divider-line:last-child {
+  background: linear-gradient(90deg, var(--miao-gold), transparent);
+}
+
+.story-divider-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--miao-gold);
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+.company-card {
+  background: linear-gradient(135deg, var(--miao-deep) 0%, var(--miao-dark) 100%);
+  border-radius: 8px;
+  padding: 28px 24px;
+  margin-top: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.company-card::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle, rgba(201,169,110,0.15) 0%, transparent 70%);
+}
+
+.company-card-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px;
+  color: var(--miao-gold-light);
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.company-card-text {
+  font-size: 13px;
+  color: rgba(245,240,230,0.8);
+  line-height: 2;
+  text-align: justify;
+}
+
+.company-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 12px 8px;
+  background: rgba(201,169,110,0.08);
+  border-radius: 6px;
+  border: 1px solid rgba(201,169,110,0.2);
+}
+
+.stat-number {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--miao-gold-light);
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: rgba(245,240,230,0.6);
+  letter-spacing: 1px;
+}
+
+/* ===== 公司优势 ===== */
+.advantages {
+  background: var(--miao-cream);
+}
+
+.adv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.adv-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 16px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(30, 58, 95,0.08);
+  border-top: 3px solid var(--miao-gold);
+  transition: transform 0.3s ease;
+}
+
+.adv-card:active {
+  transform: scale(0.97);
+}
+
+.adv-icon {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adv-icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.adv-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--miao-deep);
+  margin-bottom: 6px;
+}
+
+.adv-desc {
+  font-size: 11px;
+  color: var(--miao-text-light);
+  line-height: 1.6;
+}
+
+/* ===== 技术优势 ===== */
+.tech {
+  background: var(--miao-dark);
+  color: var(--miao-cream);
+}
+
+.tech .section-title { color: var(--miao-cream); }
+.tech .section-subtitle { color: var(--miao-gold); }
+
+.tech-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tech-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 8px;
+  border: 1px solid rgba(201,169,110,0.15);
+  transition: background 0.3s ease;
+}
+
+.tech-item:active {
+  background: rgba(201,169,110,0.08);
+}
+
+.tech-num {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--miao-gold);
+  line-height: 1;
+  min-width: 40px;
+  opacity: 0.6;
+}
+
+.tech-content h4 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 16px;
+  color: var(--miao-gold-light);
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.tech-content p {
+  font-size: 12px;
+  color: rgba(245,240,230,0.7);
+  line-height: 1.8;
+}
+
+.tech-highlight {
+  margin-top: 28px;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, transparent, rgba(201,169,110,0.1), transparent);
+  border-top: 1px solid rgba(201,169,110,0.2);
+  border-bottom: 1px solid rgba(201,169,110,0.2);
+}
+
+.tech-highlight-text {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+  color: var(--miao-gold-light);
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+/* ===== 产品矩阵 ===== */
+.products {
+  background: var(--miao-paper);
+}
+
+.product-family {
+  position: relative;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(30, 58, 95,0.12);
+}
+
+.product-family img {
+  width: 100%;
+  display: block;
+}
+
+.product-family-label {
+  position: absolute;
+  top: 12px; left: 12px;
+  padding: 6px 14px;
+  background: rgba(30, 58, 95,0.85);
+  color: var(--miao-gold-light);
+  font-size: 11px;
+  letter-spacing: 2px;
+  border-radius: 4px;
+}
+
+.product-category {
+  margin-bottom: 20px;
+}
+
+.product-category-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+  color: var(--miao-deep);
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border-left: 3px solid var(--miao-gold);
+  letter-spacing: 1px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.product-item {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 8px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(30, 58, 95,0.06);
+  border: 1px solid rgba(201,169,110,0.15);
+  transition: all 0.3s ease;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-item:active {
+  transform: scale(0.95);
+  background: var(--miao-cream);
+  border-color: var(--miao-gold);
+}
+
+.product-item-name {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--miao-deep);
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.product-item-tag {
+  font-size: 9px;
+  color: var(--miao-text-light);
+  line-height: 1.4;
+}
+
+.product-tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin: 24px 8px 0;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #2b6cb0 0%, #1e3a5f 100%);
+  border-radius: 30px;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 16px rgba(43, 108, 176, 0.35);
+  animation: tipPulse 2s ease-in-out infinite;
+}
+
+.product-tip svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+@keyframes tipPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 4px 16px rgba(43, 108, 176, 0.35); }
+  50% { transform: scale(1.03); box-shadow: 0 6px 24px rgba(43, 108, 176, 0.5); }
+}
+
+.product-item-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: linear-gradient(135deg, #2b6cb0, #1e3a5f);
+  color: #fff;
+  font-size: 9px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px rgba(43, 108, 176, 0.4);
+}
+
+/* ===== 产品弹窗 ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal {
+  background: var(--miao-paper);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.3s ease;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-overlay.active .modal {
+  transform: scale(1) translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: rgba(30, 58, 95,0.8);
+  border: none;
+  color: var(--miao-cream);
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.modal-close:active {
+  background: var(--miao-red);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, var(--miao-deep), var(--miao-dark));
+  padding: 28px 24px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-product-name {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--miao-gold-light);
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+}
+
+.modal-product-en {
+  font-size: 10px;
+  color: rgba(201,169,110,0.6);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.modal-product-target {
+  font-size: 12px;
+  color: rgba(245,240,230,0.8);
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+.modal-image-wrap {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.modal-image-wrap img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.modal-body {
+  padding: 0 20px 24px;
+}
+
+.modal-section {
+  margin-bottom: 18px;
+}
+
+.modal-section-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--miao-deep);
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--miao-border);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.modal-section-title::before {
+  content: '';
+  width: 3px;
+  height: 14px;
+  background: var(--miao-gold);
+  border-radius: 2px;
+}
+
+.modal-section-content {
+  font-size: 12px;
+  color: var(--miao-text-light);
+  line-height: 1.9;
+}
+
+.modal-section-content.ingredients {
+  color: var(--miao-text);
+}
+
+.modal-tagline {
+  text-align: center;
+  padding: 14px;
+  background: linear-gradient(90deg, transparent, rgba(201,169,110,0.1), transparent);
+  border-radius: 6px;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  color: var(--miao-deep);
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+/* ===== 招商页面 ===== */
+.invest {
+  background: linear-gradient(180deg, var(--miao-cream) 0%, var(--miao-paper) 100%);
+}
+
+.invest-hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.invest-hero-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--miao-deep);
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.invest-hero-sub {
+  font-size: 13px;
+  color: var(--miao-text-light);
+  letter-spacing: 1px;
+}
+
+.invest-policies {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.invest-policy {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(30, 58, 95,0.06);
+  border-left: 3px solid var(--miao-gold);
+}
+
+.invest-policy-num {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--miao-gold);
+  line-height: 1;
+  min-width: 30px;
+}
+
+.invest-policy-content h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--miao-deep);
+  margin-bottom: 4px;
+}
+
+.invest-policy-content p {
+  font-size: 12px;
+  color: var(--miao-text-light);
+  line-height: 1.7;
+}
+
+.invest-contact {
+  background: linear-gradient(135deg, var(--miao-deep), var(--miao-dark));
+  border-radius: 12px;
+  padding: 28px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.invest-contact::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle at 30% 30%, rgba(201,169,110,0.08) 0%, transparent 50%);
+}
+
+.invest-contact-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px;
+  color: var(--miao-gold-light);
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.contact-item svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--miao-gold);
+  flex-shrink: 0;
+}
+
+.contact-item span {
+  font-size: 14px;
+  color: var(--miao-cream);
+  letter-spacing: 1px;
+}
+
+.contact-cta {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 14px 40px;
+  background: linear-gradient(135deg, var(--miao-gold), var(--miao-gold-light));
+  color: var(--miao-dark);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(201,169,110,0.4);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.contact-cta:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 10px rgba(201,169,110,0.3);
+}
+
+/* ===== 底部 ===== */
+.footer {
+  background: var(--miao-dark);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.footer-brand {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 16px;
+  color: var(--miao-gold-light);
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.footer-text {
+  font-size: 11px;
+  color: rgba(245,240,230,0.4);
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+/* ===== 顶部导航条（滚动后出现） ===== */
+.top-nav {
+  position: fixed;
+  top: 0; left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  width: 100%;
+  max-width: 480px;
+  background: rgba(14, 37, 64,0.95);
+  backdrop-filter: blur(10px);
+  padding: 12px 20px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+  border-bottom: 1px solid rgba(201,169,110,0.2);
+}
+
+.top-nav.visible {
+  transform: translateX(-50%) translateY(0);
+}
+
+.top-nav-brand {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+  color: var(--miao-gold-light);
+  letter-spacing: 2px;
+}
+
+.top-nav-cta {
+  font-size: 11px;
+  color: var(--miao-dark);
+  background: var(--miao-gold);
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 360px) {
+  .hero-brand { font-size: 36px; letter-spacing: 6px; }
+  .section-title { font-size: 24px; }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .adv-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 顶部导航 ===== -->
+<nav class="top-nav" id="topNav">
+  <span class="top-nav-brand">贵州方世郎</span>
+  <a href="#invest" class="top-nav-cta">立即加盟</a>
+</nav>
+
+<!-- ===== 首屏封面 ===== -->
+<section class="hero" id="hero">
+  <img class="hero-bg" src="images/hero-bg.jpg" alt="贵州方世郎">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-brand-en">MIAO MEDICINE · DERMATOLOGY CLINIC</div>
+    <h1 class="hero-brand">贵州方世郎</h1>
+    <p class="hero-slogan">让中国人皮肤病烦恼不再</p>
+    <p class="hero-sub">非遗苗药原研企业 · 研发生产销售一体化</p>
+    <a href="#invest" class="hero-cta">诚邀合作</a>
+  </div>
+  <div class="scroll-hint">
+    <span class="scroll-hint-text">下滑探索</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ===== 品牌故事 ===== -->
+<section class="section brand-story" id="story">
+  <div class="miao-pattern pattern-corner-tl"></div>
+  <div class="miao-pattern pattern-corner-br"></div>
+
+  <h2 class="section-title reveal">品牌故事</h2>
+  <p class="section-subtitle reveal">BRAND STORY</p>
+  <div class="title-divider reveal"></div>
+
+  <div class="story-intro reveal">
+    <p class="story-quote">千年苗医，万年苗药</p>
+    <p class="story-quote-en">A THOUSAND YEARS OF MIAO MEDICINE</p>
+  </div>
+
+  <p class="story-text reveal reveal-delay-1">在我国55个少数民族中，有近20个拥有较为系统的医药文化，而在中国大地上已被探知的医药物中，苗医苗药有文献记载的历史最为久远。</p>
+
+  <div class="story-ancient-quote reveal reveal-delay-2">
+    <p class="story-ancient-text">"吾闻古之为医者曰苗父，苗父之为医也，以菅为席，以刍为狗，北面而祝，发十言耳。诸扶之而来者，举而来者，皆平复如故。"</p>
+    <p class="story-ancient-source">—— 西汉 · 刘向《说苑 · 辨物》</p>
+  </div>
+
+  <p class="story-text reveal reveal-delay-1">从这段不难解读的文字中，刘向就描述了苗父治病之方式，医术高明到"来者皆平复如故"。民间素有"千年苗医，万年苗药"之说，证明在苗医被记载前，早就有苗药。一些中医书籍也侧面反映苗药历史之早：在《神农本草经》中以苗语记音的药物达三分之一左右，而在《本草纲目》中仍有40多味药是用苗语记音的。</p>
+
+  <div class="story-divider reveal reveal-delay-2">
+    <div class="story-divider-line"></div>
+    <div class="story-divider-dot"></div>
+    <div class="story-divider-line"></div>
+  </div>
+
+  <h3 class="story-subheading reveal reveal-delay-1">苗药两大特色</h3>
+
+  <p class="story-text reveal reveal-delay-1">苗药的悠久历史和苗族人的历史文化分不开。由于战乱，苗族人被迫不断迁移，行程及大半个中国，最后进入西南山区和云贵高原。苗族人的迁移求生存历史也赋予了苗药一些特殊性，形成了两大特色：</p>
+
+  <div class="story-feature-tags reveal reveal-delay-2">
+    <div class="story-feature-tag">
+      <div class="story-feature-tag-title">迁徙特色</div>
+      <div class="story-feature-tag-desc">不断迁徙造就<br>简单简洁干净利落</div>
+    </div>
+    <div class="story-feature-tag">
+      <div class="story-feature-tag-title">大山特色</div>
+      <div class="story-feature-tag-desc">大山中生活而来<br>道地药材随手可得</div>
+    </div>
+  </div>
+
+  <p class="story-text reveal reveal-delay-1">迁徙特色即指，苗族人治病治伤时一般都是"在路上"，没有长时间的停留可以慢慢治疗，也没有大型的复杂的医药工具，于是各种工具皆可治病，镰刀棍子也可以拿来运用，甚至可能是徒手治病不借助其他工具，其方式方法必须简单简洁干净利落，或是随身背的一小罐药，必须在短时间达到功效，结束之后即可继续赶路。</p>
+
+  <div class="story-divider reveal reveal-delay-2">
+    <div class="story-divider-line"></div>
+    <div class="story-divider-dot"></div>
+    <div class="story-divider-line"></div>
+  </div>
+
+  <div class="story-ancient-quote reveal reveal-delay-1">
+    <p class="story-ancient-text">"一个药王，身在八方；三千苗药，八百单方。"</p>
+  </div>
+
+  <p class="story-text reveal reveal-delay-2">人们对苗药充满着神奇。苗药大多都是家传药方，一个家族拥有一些针对某一病症的药方，然后世代传承，一位苗医或是药方拥有者，为了不让其他人"抢饭碗"，对药方进行保密，加之方法的奇特和独到的疗效造就了苗药的神秘感和传奇性。</p>
+
+  <p class="story-text reveal reveal-delay-2">而在这种神秘之外，即使不是所有苗药都有关联的现代医学解释，一些苗药确实具有一些神奇的疗效。</p>
+
+  <div class="company-card reveal reveal-delay-3">
+    <h3 class="company-card-title">贵州方世郎生物科技有限公司</h3>
+    <p class="company-card-text">成立于2020年，是一家集研发、生产、销售于一体的综合性医药健康产业集团，总部位于贵州省。公司以"以人为本，家人文化"为核心，以"创新守护生命健康"为理念，专注苗药研发，传承苗医文化为己任。</p>
+    <p class="company-card-text" style="margin-top:12px;">专注苗药皮肤专科领域，是"方世郎、敏世郎、严世郎、选世郎"等品牌的全国首创原研单位。依托最新苗药纳米多肽提取技术，以道地苗药为主要原料，结合经典古方与现代工艺精制而成。</p>
+    <div class="company-stats">
+      <div class="stat-item">
+        <div class="stat-number">全国独家</div>
+        <div class="stat-label">非遗原研企业</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">近乎100%</div>
+        <div class="stat-label">纳米多肽吸收率</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">最大基地</div>
+        <div class="stat-label">苗药古方乳膏生产</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">123°C</div>
+        <div class="stat-label">高温高压工艺</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 公司优势 ===== -->
+<section class="section advantages" id="advantages">
+  <h2 class="section-title reveal">公司优势</h2>
+  <p class="section-subtitle reveal">CORE ADVANTAGES</p>
+  <div class="title-divider reveal"></div>
+  <p class="reveal" style="text-align:center;font-size:13px;color:var(--miao-text-light);margin-bottom:28px;">六大优势，构筑难以复制的竞争护城河</p>
+
+  <div class="adv-grid">
+    <div class="adv-card reveal reveal-delay-1">
+      <div class="adv-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <h3 class="adv-title">100%锁客模式</h3>
+      <p class="adv-desc">客户长期留存、持续复购</p>
+    </div>
+    <div class="adv-card reveal reveal-delay-2">
+      <div class="adv-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <h3 class="adv-title">疗效硬承诺</h3>
+      <p class="adv-desc">95%皮肤病治疗率达99.9%</p>
+    </div>
+    <div class="adv-card reveal reveal-delay-3">
+      <div class="adv-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      </div>
+      <h3 class="adv-title">单品销量大</h3>
+      <p class="adv-desc">外用药为主，消耗量大</p>
+    </div>
+    <div class="adv-card reveal reveal-delay-1">
+      <div class="adv-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <h3 class="adv-title">超低加盟门槛</h3>
+      <p class="adv-desc">任何门诊均可加盟</p>
+    </div>
+    <div class="adv-card reveal reveal-delay-2">
+      <div class="adv-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3 class="adv-title">厂家托底保障</h3>
+      <p class="adv-desc">效期6个月可随时调换</p>
+    </div>
+    <div class="adv-card reveal reveal-delay-3">
+      <div class="adv-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      </div>
+      <h3 class="adv-title">高毛利好生意</h3>
+      <p class="adv-desc">成本低、收费高、复购稳</p>
+    </div>
+  </div>
+
+  <p class="reveal reveal-delay-4" style="text-align:center;margin-top:24px;font-size:12px;color:var(--miao-gold);letter-spacing:1px;">互联网无法替代的体验项目 · 一直被模仿，从未被超越</p>
+</section>
+
+<!-- ===== 技术优势 ===== -->
+<section class="section tech" id="tech">
+  <h2 class="section-title reveal">技术优势</h2>
+  <p class="section-subtitle reveal">TECH MOAT</p>
+  <div class="title-divider reveal" style="background:linear-gradient(90deg,transparent,var(--miao-gold),transparent);"></div>
+  <p class="reveal" style="text-align:center;font-size:13px;color:rgba(245,240,230,0.7);margin-bottom:28px;">技术 · 产能 · 工艺 · 药材，四重壁垒</p>
+
+  <div class="tech-list">
+    <div class="tech-item reveal reveal-delay-1">
+      <div class="tech-num">01</div>
+      <div class="tech-content">
+        <h4>非遗技术</h4>
+        <p>非物质文化遗产纳米多肽提取技术，全国独家原研，吸收率近乎100%</p>
+      </div>
+    </div>
+    <div class="tech-item reveal reveal-delay-2">
+      <div class="tech-num">02</div>
+      <div class="tech-content">
+        <h4>最大产能</h4>
+        <p>全国最大苗药古方乳膏生产基地，自产自销稳供应，从原料到终端全程自主可控</p>
+      </div>
+    </div>
+    <div class="tech-item reveal reveal-delay-3">
+      <div class="tech-num">03</div>
+      <div class="tech-content">
+        <h4>独家工艺</h4>
+        <p>123°C高温高压（全国独有）+ 零下5°C冷凝超微，安全温和无副作用，儿童孕妇可用</p>
+      </div>
+    </div>
+    <div class="tech-item reveal reveal-delay-4">
+      <div class="tech-num">04</div>
+      <div class="tech-content">
+        <h4>道地药材</h4>
+        <p>贵州最大苗药野生基地，千年古方、辨证施治，从原料种植到终端治疗全产业链闭环</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tech-highlight reveal reveal-delay-4">
+    <p class="tech-highlight-text">研发 → 生产 → 培训 → 治疗<br>研发生产销售一体化，从原料到终端全程自主可控</p>
+  </div>
+</section>
+
+<!-- ===== 产品矩阵 ===== -->
+<section class="section products" id="products">
+  <h2 class="section-title reveal">产品矩阵</h2>
+  <p class="section-subtitle reveal">PRODUCT MATRIX</p>
+  <div class="title-divider reveal"></div>
+  <p class="reveal" style="text-align:center;font-size:13px;color:var(--miao-text-light);margin-bottom:24px;">一病一方，11大产品矩阵覆盖全人群</p>
+
+  <div class="product-family reveal">
+    <img src="images/product-family.png" alt="方世郎产品全家福">
+    <div class="product-family-label">产品全家福</div>
+  </div>
+
+  <div class="product-category reveal">
+    <h3 class="product-category-title">皮肤系列</h3>
+    <div class="product-grid">
+      <div class="product-item" data-product="0">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">佑芙泉</div>
+        <div class="product-item-tag">基底用药</div>
+      </div>
+      <div class="product-item" data-product="1">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">选世郎</div>
+        <div class="product-item-tag">皮癣病毒</div>
+      </div>
+      <div class="product-item" data-product="2">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">严世郎</div>
+        <div class="product-item-tag">皮炎皮疹</div>
+      </div>
+      <div class="product-item" data-product="3">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">敏世郎</div>
+        <div class="product-item-tag">真菌过敏</div>
+      </div>
+      <div class="product-item" data-product="4">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">蛇蝉丹</div>
+        <div class="product-item-tag">带状疱疹</div>
+      </div>
+      <div class="product-item" data-product="5">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">豆世郎</div>
+        <div class="product-item-tag">痤疮淡斑</div>
+      </div>
+      <div class="product-item" data-product="6">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">濞世郎</div>
+        <div class="product-item-tag">各类鼻炎</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-category reveal reveal-delay-1">
+    <h3 class="product-category-title">专项系列</h3>
+    <div class="product-grid">
+      <div class="product-item" data-product="7">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">婴世郎</div>
+        <div class="product-item-tag">婴幼儿</div>
+      </div>
+      <div class="product-item" data-product="8">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">菊世郎</div>
+        <div class="product-item-tag">痔疮肛肠</div>
+      </div>
+      <div class="product-item" data-product="9">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">火龙府</div>
+        <div class="product-item-tag">风湿骨病</div>
+      </div>
+      <div class="product-item" data-product="10">
+        <span class="product-item-badge">详情</span>
+<div class="product-item-name">瑶女香</div>
+        <div class="product-item-tag">女性私护</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="product-tip reveal reveal-delay-2">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+  点击产品查看详情
+</p>
+</section>
+
+<!-- ===== 招商页面 ===== -->
+<section class="section invest" id="invest">
+  <h2 class="section-title reveal">招商加盟</h2>
+  <p class="section-subtitle reveal">JOIN US</p>
+  <div class="title-divider reveal"></div>
+
+  <div class="invest-hero reveal">
+    <h3 class="invest-hero-title">诚邀合作伙伴</h3>
+    <p class="invest-hero-sub">共建全国苗药皮肤专科连锁</p>
+  </div>
+
+  <div class="invest-policies">
+    <div class="invest-policy reveal reveal-delay-1">
+      <div class="invest-policy-num">01</div>
+      <div class="invest-policy-content">
+        <h4>保姆式合作模式</h4>
+        <p>医生无需学习皮肤病，只需按照方案开方即可接诊调理，线上专家秒回支持诊断和制定方案</p>
+      </div>
+    </div>
+    <div class="invest-policy reveal reveal-delay-2">
+      <div class="invest-policy-num">02</div>
+      <div class="invest-policy-content">
+        <h4>疗效保障承诺</h4>
+        <p>可随时调换货，确保合作伙伴利益；疑难杂症提供签约治疗服务，无效退货或补货</p>
+      </div>
+    </div>
+    <div class="invest-policy reveal reveal-delay-3">
+      <div class="invest-policy-num">03</div>
+      <div class="invest-policy-content">
+        <h4>全方位拓客引流</h4>
+        <p>帮助加盟诊所拓客引流，提升医生在当地的知名度，实现名利双收</p>
+      </div>
+    </div>
+    <div class="invest-policy reveal reveal-delay-4">
+      <div class="invest-policy-num">04</div>
+      <div class="invest-policy-content">
+        <h4>超低门槛加盟</h4>
+        <p>任何门诊都可以加盟，无需垫资，无需压货；严格保护区域利益，每个镇只能有一家</p>
+      </div>
+    </div>
+    <div class="invest-policy reveal reveal-delay-4">
+      <div class="invest-policy-num">05</div>
+      <div class="invest-policy-content">
+        <h4>一站式运营服务</h4>
+        <p>完整运营体系、完善治疗项目、专家线上线下指导诊疗方案，让加盟诊所无忧经营</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="invest-contact reveal">
+    <h3 class="invest-contact-title">联系我们 · 开启合作</h3>
+    <div class="contact-item">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>招商热线：400-870-1120</span>
+    </div>
+    <div class="contact-item">
+      <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>区域经理（四川·贵州）：罗总 188-8238-7682</span>
+    </div>
+    <div class="contact-item">
+      <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>总部地址：贵州省</span>
+    </div>
+    <div class="contact-item">
+      <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span>贵州方世郎生物科技有限公司</span>
+    </div>
+    <a href="tel:4008701120" class="contact-cta">立即咨询</a>
+  </div>
+</section>
+
+<!-- ===== 底部 ===== -->
+<footer class="footer">
+  <p class="footer-brand">贵州方世郎</p>
+  <p class="footer-text">贵州方世郎生物科技有限公司<br>非遗苗药原研企业 · 让中国人皮肤病烦恼不再<br>感谢聆听 · 期待合作</p>
+</footer>
+
+<!-- ===== 产品详情弹窗 ===== -->
+<div class="modal-overlay" id="productModal">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <div class="modal-header">
+      <div class="modal-product-name" id="modalName"></div>
+      <div class="modal-product-en" id="modalEn"></div>
+      <div class="modal-product-target" id="modalTarget"></div>
+    </div>
+    <div class="modal-image-wrap">
+      <img id="modalImage" src="" alt="产品实物图">
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">主要成份</div>
+        <div class="modal-section-content ingredients" id="modalIngredients"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">使用范围</div>
+        <div class="modal-section-content" id="modalScope"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">苗医方案</div>
+        <div class="modal-section-content" id="modalPlan"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">使用技术</div>
+        <div class="modal-section-content" id="modalTech"></div>
+      </div>
+      <div class="modal-tagline" id="modalTagline"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== 产品数据 =====
+var products = [
+  {
+    name: '佑芙泉',
+    en: 'YOU FU QUAN',
+    target: '皮炎 / 真菌 / 感染的基底使用',
+    image: 'images/p-youfuquan.png',
+    ingredients: '丹参、钻山风、水蛭、独活、川乌、艾叶、透骨草、冬青油、樟脑、薄荷脑、醋酸氯己定',
+    scope: '杀菌、消炎、软化皮肤；排出皮下湿气、促进膏体吸收。作为各类皮肤问题的基底打底产品，配合后续膏体使用，提升整体吸收效率。',
+    plan: '作为基底护理第一步使用，为后续药膏吸收创造条件',
+    tech: '喷涂于患处，轻柔按摩至吸收后，再涂抹对应治疗膏体',
+    tagline: '全系列产品的吸收加速器，打底必备'
+  },
+  {
+    name: '选世郎',
+    en: 'XUAN SHI LANG',
+    target: '针对各种皮癣 / 病毒',
+    image: 'images/p-xuanshilang.png',
+    ingredients: '皂角刺、蛇床子、铁冬青、白藓皮、独角莲、百部、五倍子、狼毒、土茯苓、樟脑、薄荷脑、七星剑、地肤子',
+    scope: '手癣、足癣、股癣、汗斑癣、体癣、花斑癣、牛皮癣、银屑病、头癣、鱼鳞病、皮毒癣、鹅掌风、玫瑰癣、多发性皮癣、斑点性皮癣、结节性痒疹、螨虫、疥疮、红斑狼疮',
+    plan: '1、清肺火\n2、补维生素 + 消炎\n3、清上焦',
+    tech: '1、喷涂天泉液\n2、涂抹敏中医 + 彼忠医 + 选忠医',
+    tagline: '皮癣病毒类首选，从血液而治，内清外拔'
+  },
+  {
+    name: '严世郎',
+    en: 'YAN SHI LANG',
+    target: '针对各种皮炎 / 皮疹',
+    image: 'images/p-yanshilang.png',
+    ingredients: '野花椒、蝉壳、石菖蒲、马齿笕、辣蓼、蛇床子、白藓皮、构树、生地、丹皮、赤芍、地黄、七叶一枝花、独活',
+    scope: '汗疹、奶疹、丘疹、湿疹、毛囊炎、神经性皮炎、疥疮、痱子、脂溢性皮炎、接触性皮炎、慢性荨麻疹、玫瑰糠疹、手脚皲裂、手脚脱皮、龟头炎、物理性皮炎、丝状型皮炎、头皮皮炎',
+    plan: '1、清肺火\n2、补维生素 + 消炎',
+    tech: '1、喷涂天泉液\n2、涂抹敏中医 + 佊忠医',
+    tagline: '皮炎皮疹类全覆盖，接触性问题针对性解决'
+  },
+  {
+    name: '敏世郎',
+    en: 'MIN SHI LANG',
+    target: '针对真菌与过敏皮肤',
+    image: 'images/p-minshilang.png',
+    ingredients: '狼毒、苦参、蛇床子、芦荟、地肤子、野花椒、黄柏、白藓皮、独角莲、百部',
+    scope: '紫外线过敏、日光性过敏、药物性过敏、荨麻疹、接触性过敏、潮湿/湿热/污浊性过敏、季节性过敏、皮肤瘙痒、全身无症状瘙痒、脚痒、香港脚、脚臭、烂脚丫、汗疱疹、白色糠疹、湿疹、热痱子、蚊虫叮咬',
+    plan: '1、清肺火\n2、润肤、修肤',
+    tech: '1、喷涂天泉液\n2、涂抹敏中医',
+    tagline: '真菌过敏双效，止痒修肤一步到位'
+  },
+  {
+    name: '蛇蝉丹',
+    en: 'SHE CHAN DAN',
+    target: '针对各种带状性疱疹',
+    image: 'images/p-shechandan.png',
+    ingredients: '七叶一枝花、紫花地丁、飞杨草、九里香、薄荷、冰片、苦参、蛇床子、地肤子、白藓皮、土茯苓、七星剑、黄柏、狼毒、皂角刺、百部、醋酸氯己定',
+    scope: '蛇盘疮、缠腰蛇、带状疱疹、生殖疱疹、病毒性疱疹、缠腰火丹、疱疹湿疹湿毒、热疮蜘蛛疮；清热解毒、抑菌消炎拨毒、活血消肿化瘀、舒经活络、修复神经、逐渐消痛',
+    plan: '1、清肺火\n2、调免疫力\n3、补肾',
+    tech: '1、喷佑芙泉\n2、涂抹蛇蝉丹包裹10分钟（疼痛者需针刺拔罐）',
+    tagline: '带状疱疹专攻，清热解毒兼修复神经止痛'
+  },
+  {
+    name: '豆世郎',
+    en: 'DOU SHI LANG',
+    target: '脸部青春痘 / 痤疮 / 美白淡斑',
+    image: 'images/p-doushilang.png',
+    ingredients: '枳实、藿香、辛夷、连翘、鲜马齿苋、白芷、细辛、荆芥、五加皮、赤芍、茵陈、防己、人参',
+    scope: '青春痘、痤疮、丘疹、脓包、痘印、粉刺、暗疮、皮炎、皮癣、激素脸、皮炎性红痘、非炎性青春痘、美白淡斑、收缩毛孔、紧致肌肤',
+    plan: '1、敏世郎生理盐水稀释后涂抹（1:3）\n2、佊世郎生理盐水稀释后涂抹（1:3）\n3、涂抹豆世郎一天两次',
+    tech: '联合用药，先稀释调理再涂抹豆世郎，早晚各一次',
+    tagline: '面部问题一站式，祛痘淡斑收缩毛孔'
+  },
+  {
+    name: '濞世郎',
+    en: 'BI SHI LANG',
+    target: '针对各种鼻炎',
+    image: 'images/p-bishilang.png',
+    ingredients: '鹅不食草、辛夷、野菊花、白芷、甘草、细辛、薄荷脑、冰片、葡萄糖',
+    scope: '过敏性鼻炎、鼻窦炎、季节性鼻炎、鼻塞、鼻痒、鼻干、流鼻涕、打喷嚏、慢性鼻炎、鼻内结痂、鼻甲肥大、腺样体肥大、病毒细菌肿胀引起的鼻腔炎症',
+    plan: '1、清火\n2、润肺、调节免疫',
+    tech: '鼻喷 + 鼻膏，联合用药，膏放入喷',
+    tagline: '鼻喷鼻膏联合，各类鼻炎通吃'
+  },
+  {
+    name: '婴世郎',
+    en: 'YING SHI LANG',
+    target: '专业调理各种婴幼儿皮肤问题',
+    image: 'images/p-yingshilang.png',
+    ingredients: '小分子肽生物提取物、芦荟、野菊花、艾草、地肤子、山茶油、金银花、百部、醋酸氯己定',
+    scope: '婴幼儿、儿童皮炎、湿疹、尿布疹、奶疹、汗疹、痱子、皮肤痒、红屁股、蚊虫叮咬等皮肤不适；也可用于日常皮肤护理',
+    plan: '温和配方，儿童孕妇可用，无需特殊内服调理',
+    tech: '取适量涂抹于患处，每日2-3次，日常护理可薄涂',
+    tagline: '婴幼儿专用，温和安全，日常护理兼治疗'
+  },
+  {
+    name: '菊世郎',
+    en: 'JU SHI LANG',
+    target: '针对各种痔疮疾病',
+    image: 'images/p-jushilang.png',
+    ingredients: '苦参、牛黄、珍珠、黄柏、炉甘石、硼砂、冰片等多味纯天然药材提取精华',
+    scope: '内痔、外痔、混合痔、肛裂、便血、肿胀、疼痛、脱肛、翻花痔、肛门瘙痒、肛周湿疹',
+    plan: '1、清火\n2、调肠胃，清淤血',
+    tech: '1、喷佑芙泉\n2、涂抹菊世郎A + B一起合用',
+    tagline: '痔疮专科，A+B合用内外兼治'
+  },
+  {
+    name: '火龙府',
+    en: 'HUO LONG FU',
+    target: '针对各类风湿 / 骨病 / 疼痛科',
+    image: 'images/p-huolongfu.png',
+    ingredients: '三七、红花、川乌、乳香、血竭、莪术、木香、冰片',
+    scope: '风湿、类风湿、肩周炎、骨质增生、颈椎病、腰间盘突出、肌腱炎、手脚麻木、跌打损伤、老年腱鞘炎、坐骨神经痛',
+    plan: '1、活血\n2、润肝、补肾',
+    tech: '涂抹火龙府后，拔罐5分钟，包裹30分钟',
+    tagline: '风湿骨痛专攻，拔罐包裹药力深透'
+  },
+  {
+    name: '瑶女香',
+    en: 'YAO NV XIANG',
+    target: '专业调理女性各种隐私部位炎症',
+    image: 'images/p-yinrunjiaoyan.png',
+    ingredients: '白鹤灵芝、红花、鸡血藤、苦参、黄柏提取物、纳米银、卡波姆、薄荷脑、三乙醇胺等多种植物草本精华',
+    scope: '霉菌性阴道炎、滴虫性阴道炎、细菌性阴道炎、盆腔炎、白带异味、宫颈糜烂、白色念珠菌、真菌、细菌等阴道混合感染的妇科常见病',
+    plan: '成年女性专用，孕妇禁用；仅供外用，切勿口服',
+    tech: '使用给药器推入，给药器为一次性用品，切勿重复使用',
+    tagline: '妇科炎症专用，纳米银草本双效抑菌'
+  }
+];
+
+// ===== 弹窗控制 =====
+var modalOverlay = document.getElementById('productModal');
+var modalClose = document.getElementById('modalClose');
+
+function openModal(index) {
+  var p = products[index];
+  document.getElementById('modalName').textContent = p.name;
+  document.getElementById('modalEn').textContent = p.en;
+  document.getElementById('modalTarget').textContent = p.target;
+  document.getElementById('modalImage').src = p.image;
+  document.getElementById('modalImage').alt = p.name + '实物图';
+  document.getElementById('modalIngredients').textContent = p.ingredients;
+  document.getElementById('modalScope').textContent = p.scope;
+  document.getElementById('modalPlan').innerHTML = p.plan.replace(/\n/g, '<br>');
+  document.getElementById('modalTech').innerHTML = p.tech.replace(/\n/g, '<br>');
+  document.getElementById('modalTagline').textContent = p.tagline;
+  modalOverlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modalOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// 绑定产品点击
+var productItems = document.querySelectorAll('.product-item');
+productItems.forEach(function(item) {
+  item.addEventListener('click', function() {
+    var idx = parseInt(this.getAttribute('data-product'));
+    openModal(idx);
+  });
+});
+
+// 关闭按钮
+modalClose.addEventListener('click', closeModal);
+
+// 点击遮罩关闭
+modalOverlay.addEventListener('click', function(e) {
+  if (e.target === modalOverlay) {
+    closeModal();
+  }
+});
+
+// 阻止弹窗内容区域点击冒泡
+modalOverlay.querySelector('.modal').addEventListener('click', function(e) {
+  e.stopPropagation();
+});
+
+// ESC键关闭
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+    closeModal();
+  }
+});
+
+// ===== 滚动动画 =====
+var revealElements = document.querySelectorAll('.reveal');
+
+function checkReveal() {
+  var windowHeight = window.innerHeight;
+  revealElements.forEach(function(el) {
+    var elementTop = el.getBoundingClientRect().top;
+    var elementVisible = 80;
+    if (elementTop < windowHeight - elementVisible) {
+      el.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', checkReveal);
+window.addEventListener('load', checkReveal);
+
+// ===== 顶部导航显示控制 =====
+var topNav = document.getElementById('topNav');
+var heroSection = document.getElementById('hero');
+
+window.addEventListener('scroll', function() {
+  if (window.scrollY > heroSection.offsetHeight * 0.5) {
+    topNav.classList.add('visible');
+  } else {
+    topNav.classList.remove('visible');
+  }
+});
+
+// ===== 平滑滚动锚点跳转 =====
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    var targetId = this.getAttribute('href');
+    var target = document.querySelector(targetId);
+    if (target) {
+      var targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// ===== 微信分享优化 =====
+// 页面加载完成后设置分享相关
+window.addEventListener('load', function() {
+  // 确保图片预加载
+  products.forEach(function(p) {
+    var img = new Image();
+    img.src = p.image;
+  });
+});
+</script>
+</body>
+</html>
